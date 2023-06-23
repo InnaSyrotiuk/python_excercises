@@ -72,3 +72,76 @@ class Person():
 
 daniel = Person("Daniel")
 print(f"{Person.name} name is {daniel.name}")
+
+
+# TASK 26: Define a function which can compute the sum of two numbers.
+
+def sum(num1, num2):
+    return num1+num2
+
+
+print(sum(1, -12))
+
+# using lambda
+
+
+def sum(n1, n2): return n1 + n2
+
+
+print(sum(1, 2))
+
+
+# TASK 27: Define a function that can convert a integer into a string and print it in console.
+
+def convert_int_to_str(num):
+    return str(num)
+
+
+print(convert_int_to_str(9))
+print(type(convert_int_to_str(9)))
+
+# using lambda
+
+
+def conv(x): return str(x)
+
+
+n = conv(10)
+print(n)
+print(type(n))
+
+
+# TASK 28: Define a function that can receive two integer numbers in string form and compute their sum and then print it in console.
+
+def sum_of_str(num1, num2):
+    return int(num1)+int(num2)
+
+
+print(sum_of_str("-10", "17"))
+
+
+# TASK 29: Define a function that can accept two strings as input and concatenate them and then print it in console.
+
+def concatenate(str1, str2):
+    return str1 + str2
+
+
+print(concatenate("10", "222"))
+
+
+# TASK 30: Define a function that can accept two strings as input and print the string with maximum length in console.
+# If two strings have the same length, then the function should print all strings line by line.
+
+def str_max_length(str1, str2):
+    if len(str1) > len(str2):
+        print(str1)
+    elif len(str1) < len(str2):
+        print(str2)
+    elif len(str1) == len(str2):
+        print(str1)
+        print(str2)
+
+
+str_max_length("one", "four")
+str_max_length("seven", "ten")
+str_max_length("one", "two")
